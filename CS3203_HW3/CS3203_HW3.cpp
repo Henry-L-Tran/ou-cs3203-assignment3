@@ -32,3 +32,26 @@ int multiplying(vector<int> list) {
 
     return product;
 }
+
+//This main function creates a vector of integers created by the user and passes it on to different functions
+//using different operations.
+int main()
+{
+    vector<int> array;
+    int input = 0;
+    int size = 0;
+
+    cout << "Enter the size of the vector you want to create." << endl;
+    cin >> size;
+
+    cout << "Enter in the integers that you want into the list." << endl;
+
+    for (int i = 0; i < size; i++) {
+        cin >> input;
+        array.push_back(input);
+    }
+
+    cout << "The sum of your array is: " << adding(array) << endl;
+    cout << "The product of your array is: " << multiplying(array) << endl;
+
+}
