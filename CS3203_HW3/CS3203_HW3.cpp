@@ -19,3 +19,16 @@ int adding(vector<int> list) {
 
     return sum;
 }
+
+//This function takes its parameter and multiplies a vector containing integers, returning the product.
+int multiplying(vector<int> list) {
+
+    int product = 1;
+
+    for (int i = 0; i < list.size(); i++) {
+        product *= list.at(i);
+
+    }
+
+    return product;
+}
