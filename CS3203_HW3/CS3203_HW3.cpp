@@ -69,5 +69,7 @@ int main()
 
     cout << "The sum of your array is: " << adding(array) << endl;
     cout << "The product of your array is: " << multiplying(array) << endl;
+    cout << "Your array reversed is: " << endl;
+    reverse(array);
 
 }
