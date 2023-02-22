@@ -33,6 +33,22 @@ int multiplying(vector<int> list) {
     return product;
 }
 
+//This function takes its parameter and prints the given vector, but in reverse form.
+void reverse(vector<int> list) {
+    
+    vector<int> copy(list.size(), 0);
+    int length = copy.size();
+
+    for (int i = 0; i < copy.size(); i++) {
+        copy.at(i) = list.at(length - 1 - i);
+
+    }
+
+    for (int j = 0; j < copy.size(); j++) {
+        cout << copy.at(j) << endl;
+    }
+}
+
 //This main function creates a vector of integers created by the user and passes it on to different functions
 //using different operations.
 int main()
@@ -53,5 +69,7 @@ int main()
 
     cout << "The sum of your array is: " << adding(array) << endl;
     cout << "The product of your array is: " << multiplying(array) << endl;
+    cout << "Your array reversed is: " << endl;
+    reverse(array);
 
 }
