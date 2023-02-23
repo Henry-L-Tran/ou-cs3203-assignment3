@@ -1,13 +1,13 @@
 //@author Henry Tran
 
-// CS3203-Assignment3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// CS3203 Assignment3 - Git
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-//This function takes its parameter and adds a vector containing integers, and returns the sum.
+//This function takes its parameter created by the user and adds a vector containing integers, and returns the sum.
 int adding(vector<int> list) {
 
     int sum = 0;
@@ -20,7 +20,7 @@ int adding(vector<int> list) {
     return sum;
 }
 
-//This function takes its parameter and multiplies a vector containing integers, returning the product.
+//This function takes its parameter created by the user and multiplies a vector containing integers, returning the product.
 int multiplying(vector<int> list) {
 
     int product = 1;
